@@ -1,0 +1,8 @@
+<% (0..9).each do |i| -%>
+<%= i %>
+<% end -%>
+
+
+<%= 'Name: ' + Settings::NAME %>
+
+<%= 'Email: ' + Settings::EMAIL %>

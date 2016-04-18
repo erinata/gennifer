@@ -1,0 +1,125 @@
+\documentclass[11pt,twoside]{article}
+
+\usepackage[utf8]{inputenc} % encoding
+\usepackage[T1]{fontenc} % encoding
+
+\usepackage[
+authordate,
+natbib,
+backend=biber,
+doi=false,
+isbn=false,
+url=false,
+noibid=true
+]{biblatex-chicago} % citation package
+
+% natbib style commands
+\renewcommand*{\nameyeardelim}{\addcomma\space}
+% \newcommand*{\citep}{\parencite}
+% \newcommand*{\citet}{\textcite}
+\newcommand*{\citefoot}{\footcite}
+\newcommand*{\citefull}{\fullcite}
+\newcommand*{\citeno}{\nocite}
+% \renewcommand*{\cite}{\textcite}
+
+%\addbibresource{reference.bib}%
+
+\usepackage{fullpage} % This shrink the margins of the document
+
+\usepackage{enumerate} % customized enumerator
+
+\usepackage{url} % for url and hyperlink
+
+\usepackage{graphicx} % extended graphic package
+
+\usepackage{amsmath} % For equation*, align .....etc.
+\usepackage{amsthm} % For theorem environments
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{algorithm}{Algorithm}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{observation}{Observation}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem*{claim}{Claim}
+\newtheorem{case}{Case}
+\newtheorem{example}{Example}
+
+
+% \usepackage{lineno}   % For line numbers in draft
+%   \linenumbers
+%   \makeatletter
+% \newcommand*\patchAmsMathEnvironmentForLineno[1]{%
+%   \expandafter\let\csname old#1\expandafter\endcsname\csname #1\endcsname
+%   \expandafter\let\csname oldend#1\expandafter\endcsname\csname end#1\endcsname
+%   \renewenvironment{#1}%
+%      {\linenomath\csname old#1\endcsname}%
+%      {\csname oldend#1\endcsname\endlinenomath}}%
+% \newcommand*\patchBothAmsMathEnvironmentsForLineno[1]{%
+%   \patchAmsMathEnvironmentForLineno{#1}%
+%   \patchAmsMathEnvironmentForLineno{#1*}}%
+% \AtBeginDocument{%
+% \patchBothAmsMathEnvironmentsForLineno{equation}%
+% \patchBothAmsMathEnvironmentsForLineno{align}%
+% \patchBothAmsMathEnvironmentsForLineno{flalign}%
+% \patchBothAmsMathEnvironmentsForLineno{alignat}%
+% \patchBothAmsMathEnvironmentsForLineno{gather}%
+% \patchBothAmsMathEnvironmentsForLineno{multline}%
+% }
+
+\usepackage[toc,page]{appendix} % appendix
+
+\usepackage{setspace} % for onehalfspacing
+\onehalfspacing
+
+\usepackage[usenames, dvipsnames]{color} % for color names
+\newcommand{\green}[1]{\textcolor{green}{[Note: #1]}}
+\newcommand{\red}[1]{\textcolor{red}{[Note: #1]}}
+%\newcommand{\green}[1]{\textcolor{green}{}}              % use this to turn off comment
+%\newcommand{\red}[1]{\textcolor{red}{}}                  % use this to turn off comment
+
+\usepackage[para,online,flushleft]{threeparttable} % complicated tables
+
+
+%\title{This is a title\footnote{Here are some acknowledgements.}}
+\title{This is a title}
+\author{
+  <%= Settings::FIRSTNAME %> <%= Settings::MIDDLENAME %> <%= Settings::LASTNAME %>\footnote{<%= Settings::ADDRESS %> <%= Settings::CITY %> <%= Settings::STATE %> <%= Settings::ZIPCODE %>, <%= Settings::PHONENUMBER %> \protect\url{<%= Settings::EMAIL %>}}\\
+  <%= Settings::DEPARTMENTNAME %>, <%= Settings::UNIVERISITYNAME %>
+  %\and
+  %FirstName2 LastName2\footnote{Address, Phone Number \protect\url{email2@email.com}}\\
+  %Department Name, University Name
+}
+\date{\today}
+
+\graphicspath{ {figures/} }
+\sloppy
+
+\begin{document}
+
+%\maketitle
+
+% \begin{abstract}
+% \textsc{Preliminary and incomplete. Please do not distribute without permission.} \\
+
+% Some abstract text here.
+
+% \end{abstract}
+
+
+
+% \newpage
+
+%\section{section name} % (fold)
+
+Empty latex template
+
+%\printbibliography
+
+\end{document}

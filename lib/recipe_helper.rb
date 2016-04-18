@@ -3,7 +3,7 @@ def recipe_setup(jr)
     def initialize(full_path, argv)
         @argv = argv
         @current_dir = Dir.pwd
-        @resources = File.expand_path('~/.jennifer/resources')
+        @resources = File.expand_path('~/.gennifer/resources')
         @full_name = File.basename(full_path)
         @base_name = File.basename(full_path,'.*')
         @ext_name = File.extname(full_path)

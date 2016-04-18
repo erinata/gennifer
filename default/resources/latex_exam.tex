@@ -1,0 +1,259 @@
+\documentclass[12pt]{exam}
+\usepackage[margin=4em]{geometry}
+\usepackage{setspace}
+\singlespacing
+
+\newcommand{\coursecode}{TEST101}
+\newcommand{\coursetitle}{Course Title}
+\newcommand{\coursesemester}{Spring 2012}
+
+% For Exam
+\newcommand{\examtype}{Final}
+\newcommand{\examname}{Exam}
+\newcommand{\examnumber}{}
+\newcommand{\examdate}{28th April 2012}
+\newcommand{\examtime}{3:30pm - 4:30pm}
+
+% For Problem Sets
+% \newcommand{\examtype}{}
+% \newcommand{\examname}{Problem Set}
+% \newcommand{\examnumber}{1}
+% \newcommand{\examdate}{Due: 28th April 2012}
+% \newcommand{\examtime}{In class}
+
+%\printanswers
+
+\renewcommand{\solutiontitle}{\noindent}
+
+
+\begin{document}
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\scriptsize \coursecode}{\scriptsize Page \thepage\ of \numpages}{\scriptsize Name:\hspace{8em}}
+\runningheadrule
+
+\noindent
+\begin{minipage}{.7\textwidth}
+\textbf{\coursecode} \textbf{\coursetitle}(\textbf{\coursesemester}) \textbf{\examtype\ \examname\ \examnumber} \\
+\begin{scriptsize}
+\textbf{\examdate\ (\examtime)}  \\
+%\textbf{Due Date: \examdate}  \\
+\end{scriptsize}
+
+\end{minipage}
+\begin{minipage}{.3\textwidth}
+\begin{scriptsize}
+\textbf{Name:} \hrulefill  \\
+\textbf{UID:}  \hrulefill \\
+\end{scriptsize}
+\end{minipage}
+
+\hrule
+\hrule
+
+
+% The score header table
+\begin{flushright}
+\begin{scriptsize}
+\hqword{Question}
+\hpword{Weight}
+\hsword{Score}
+\addpoints
+\gradetable[h]
+\end{scriptsize}
+\end{flushright}
+
+\vspace{1em}
+\noindent This \examname\  contains \numquestions\  questions.
+Please attempt all questions. Organize your work and write clearly.
+
+\fullwidth{\Large \textbf{Long Questions}}
+
+\begin{questions}
+
+% Add a question
+\addpoints
+\question[10] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.
+\begin{solution}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\end{solution}
+\vfill
+
+% Add a long question
+\addpoints
+\question[10] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\begin{solution}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\end{solution}
+\vfill
+
+\newpage
+
+
+% Add a question with parts
+\addpoints
+\question[10] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.
+\begin{parts}
+\part Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+\begin{solution}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\end{solution}
+\vfill
+\part Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur.
+\begin{solution}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\end{solution}
+\vfill
+\end{parts}
+
+
+% Add a question with parts and points at parts
+\addpoints
+\question[10] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.
+\noaddpoints
+\begin{parts}
+\part[5] Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+\begin{solution}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\end{solution}
+\vfill
+\part[5] Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur.
+\begin{solution}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\end{solution}
+\vfill
+\end{parts}
+
+
+\newpage
+
+\fullwidth{\Large \textbf{Multiple Choice Questions}}
+
+\addpoints
+\question[10]
+One of these things is not like the others; one of these things is not
+the same. Which one is different?
+
+\begin{choices}
+\choice John
+\choice Paul
+\choice George
+\choice Ringo
+\CorrectChoice Socrates
+\end{choices}
+
+
+\addpoints
+\question[10]
+One of these things is not like the others; one of these things is not
+the same. Which one is different?
+
+\begin{oneparchoices}
+\choice John
+\choice Paul
+\choice George
+\choice Ringo
+\CorrectChoice Socrates
+\end{oneparchoices}
+
+
+
+\addpoints
+\question[10]
+One of these things is not like the others; one of these things is not
+the same. Which one is different?
+
+\begin{checkboxes}
+\choice John
+\choice Paul
+\choice George
+\choice Ringo
+\CorrectChoice Socrates
+\end{checkboxes}
+
+\addpoints
+\question[10]
+One of these things is not like the others; one of these things is not
+the same. Which one is different?
+
+\begin{oneparcheckboxes}
+\choice John
+\choice Paul
+\choice George
+\choice Ringo
+\CorrectChoice Socrates
+\end{oneparcheckboxes}
+
+
+\fullwidth{\Large \textbf{Short Questions}}
+
+\addpoints
+\question[20]
+Answer the following questions on the lines at the right:
+\begin{parts}
+\part
+Who’s buried in Grant’s tomb? \answerline[ABC]
+\part
+\begin{subparts}
+\subpart
+What light through yonder window breaks? \answerline[DEF]
+\subpart
+To be, or not to be; that is the question? \answerline[GHI]
+\end{subparts}
+\part
+What was the color of George Washington’s white horse? \answerline[JKL]
+\end{parts}
+
+
+
+
+\end{questions}
+
+
+\end{document}
