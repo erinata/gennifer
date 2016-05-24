@@ -5,7 +5,11 @@ require 'erb'
 # TODO: command to generate new recipes with commented hint/tutorial
 # TODO: write tests and test in windows
 # TODO: better treatment for duplicate files in bin folder
-# TODO: put help text in recipe and make the help command auto read it
+# TODO: put help text in recipe and make the help command auto read it (can add an option to show verbose help or short help)
+# TODO: write a lot richer default recipe (at least it should support more file extension names)
+
+
+
 
 module Gennifer
   def self.gen(argv)
@@ -108,6 +112,7 @@ module Gennifer
       "
     else
       puts "
+
       gen install                   install the default settings and recipe
       gen myproject article         generate a latex article project
       gen myproject exam            generate a latex exam project
@@ -118,6 +123,8 @@ module Gennifer
       gen myfile.rb bin             generate a ruby file and make it executable,
                                     move the file to the bin folder and use the
                                     editor to open the file.
+      gen myfile py                 generate a python file with name myfile
+
       "
     end
   end

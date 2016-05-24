@@ -8,7 +8,8 @@ To install the gem:
 
     $ gem install gennifer
 
-To put default settings in the folder ~/.gennifer
+You need some recipes to use gennifer. Before writing your own recipe, you are highly recommended to install the default settings and recipes. 
+To put default settings and recipes in the folder ~/.gennifer
 
     $ gen install
 
@@ -82,8 +83,9 @@ be in the following format.
       end
     end
 
-Apart from coding the whole recipe using ruby (like using mkdir, cp, mv in
-FileUtils), there are several method you can use in the recipe. For example,
+You may write the whole recipe using ruby (like using mkdir, cp, mv in
+FileUtils). However, there are several convenient helper methods you can 
+use in the recipe. For example,
 `create` will create a new directory in the target location if only the location
 is specified. And it will copy a file/directory
 from the resources folder if a resources location is specified in the second
