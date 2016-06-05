@@ -2,14 +2,18 @@ require "gennifer/version"
 require 'fileutils'
 require 'erb'
 
+
+
 # TODO: command to generate new recipes with commented hint/tutorial
 # TODO: write tests and test in windows
 # TODO: better treatment for duplicate files in bin folder
-# TODO: put help text in recipe and make the help command auto read it (can add an option to show verbose help or short help)
+# TODO: put help text in recipe and make the help command auto read it (can add an option to show verbose help or short help).... One way to do it is to add a method "help_text" to each recipe file. Probably should not show all the help text in every recipe every single time. Just hsow all of them when the user do "gen help all". (Advise them "gen help all" when they just do "gen help" or just type "gen")
 # TODO: write a lot richer default recipe (at least it should support more file extension names)
-
-
-
+# TODO: use -exe -bin -e -b instead of just exe and bin in the default recipe
+# TODO: better advide when gennifer is installed but there is no settings file (or the settings files is not in the correct format)
+# TODO: show help text or show better instructions (instead of 'recipe not found") when gen is run but no recipe is matached. (presumably this is the case of typo or wrong syntax)
+# TODO: consider adding convention such as underscore before project type
+# TODO: make the arguments available to the receipe as a hash. So that one can use erb to get the argument and generate more complicated files.
 
 module Gennifer
   def self.gen(argv)
@@ -113,7 +117,7 @@ module Gennifer
     else
       puts "
 
-      gen install                   install the default settings and recipe
+      gen install                   install the default settings and recipes
       gen myproject article         generate a latex article project
       gen myproject exam            generate a latex exam project
       gen myproject letter          generate a latex letter project
