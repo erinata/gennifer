@@ -9,11 +9,15 @@ require 'erb'
 # TODO: better treatment for duplicate files in bin folder
 # TODO: put help text in recipe and make the help command auto read it (can add an option to show verbose help or short help).... One way to do it is to add a method "help_text" to each recipe file. Probably should not show all the help text in every recipe every single time. Just hsow all of them when the user do "gen help all". (Advise them "gen help all" when they just do "gen help" or just type "gen")
 # TODO: write a lot richer default recipe (at least it should support more file extension names)
-# TODO: use -exe -bin -e -b instead of just exe and bin in the default recipe
 # TODO: better advide when gennifer is installed but there is no settings file (or the settings files is not in the correct format)
 # TODO: show help text or show better instructions (instead of 'recipe not found") when gen is run but no recipe is matached. (presumably this is the case of typo or wrong syntax)
 # TODO: consider adding convention such as underscore before project type
 # TODO: make the arguments available to the receipe as a hash. So that one can use erb to get the argument and generate more complicated files.
+# TODO: better "bin recipe", moving the file to bin folder after create mey not be the best solution because it handle duplicate files poorly (or I can improve the afterrecipe to take into accoount those situation, or may a helper method)
+
+
+
+
 
 module Gennifer
   def self.gen(argv)
@@ -44,6 +48,7 @@ module Gennifer
 
 
     if (argv0 == 'help' or argv0 == '') then
+      help_text_old(argv1)
       help_text(argv1)
     else
       recipe_class = get_recipe_class(argv1)
@@ -91,6 +96,23 @@ module Gennifer
   end
 
   def self.help_text(argv1)
+    padding = "
+      "
+    puts "#{padding}More help text..........(under construction)"
+
+
+    recipe_class = get_recipe_class(argv1)
+    if recipe_class then
+      puts "#{padding}Show help text for #{recipe_class}"
+    else
+      puts "#{padding}Show general help text"
+    end
+
+
+    
+  end
+
+  def self.help_text_old(argv1)
 
     if argv1 == 'install' then
       puts "
