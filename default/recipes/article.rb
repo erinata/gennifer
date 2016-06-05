@@ -10,4 +10,12 @@ class ArticleRecipe
     create (@full_path + "/figures/sample-figure.pdf"), 'sample-figure.pdf'
 
   end
+
+  def example
+  	'gen MyArticleName article'
+  end
+  
+  def explanation
+  	'generate a latex article project'
+  end
 end

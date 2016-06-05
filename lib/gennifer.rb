@@ -103,12 +103,11 @@ module Gennifer
 
     recipe_class = get_recipe_class(argv1)
     if recipe_class then
-      puts "#{padding}Show help text for #{recipe_class}"
+      #puts "#{padding}Show help text for #{recipe_class}"
+      puts "#{padding}#{recipe_class.new.example}         #{recipe_class.new.explanation}"
     else
       puts "#{padding}Show general help text"
     end
-
-
     
   end
 
