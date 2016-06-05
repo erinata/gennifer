@@ -10,4 +10,14 @@ class BeamerRecipe
     create (@full_path + "/figures/sample-figure.pdf"), 'sample-figure.pdf'
 
   end
+
+
+  def example
+  	'gen MyProjectName beamer'
+  end
+  
+  def explanation
+  	'generate a latex beamer project'
+  end
+
 end

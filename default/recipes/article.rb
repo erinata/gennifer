@@ -12,7 +12,7 @@ class ArticleRecipe
   end
 
   def example
-  	'gen MyArticleName article'
+  	'gen MyProjectName article'
   end
   
   def explanation

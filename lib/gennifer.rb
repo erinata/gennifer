@@ -8,6 +8,9 @@ require 'erb'
 # TODO: write tests and test in windows
 # TODO: better treatment for duplicate files in bin folder
 # TODO: put help text in recipe and make the help command auto read it (can add an option to show verbose help or short help).... One way to do it is to add a method "help_text" to each recipe file. Probably should not show all the help text in every recipe every single time. Just hsow all of them when the user do "gen help all". (Advise them "gen help all" when they just do "gen help" or just type "gen")
+# TODO: help text when the project type is available but with no name, say "gen article" should show the help text of article  (current behaviour is to generate a article project with name article, which is strange)
+
+
 # TODO: write a lot richer default recipe (at least it should support more file extension names)
 # TODO: better advide when gennifer is installed but there is no settings file (or the settings files is not in the correct format)
 # TODO: show help text or show better instructions (instead of 'recipe not found") when gen is run but no recipe is matached. (presumably this is the case of typo or wrong syntax)
@@ -108,7 +111,8 @@ module Gennifer
     else
       puts "#{padding}Show general help text"
     end
-    
+
+
   end
 
   def self.help_text_old(argv1)
