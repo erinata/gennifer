@@ -9,3 +9,4 @@ class GenniferTest < Minitest::Test
     assert false
   end
 end
+
